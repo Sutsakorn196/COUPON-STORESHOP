@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
     <nav class="navbar">
-        <a href="index.html">หน้าแรก</a>
+        <a onclick="window.location.reload(true);">โหลดใหม่</a>
         <a href="coupon.html">คูปอง</a>
         <a href="profile.html">โปรไฟล์</a>
         <a href="history.html">ประวัติ</a>
@@ -16,7 +16,7 @@
 </head>
 <body>
 
-  <div class="coupon-container">
+  <div class="index-container">
     <h1>คูปองของฉัน</h1>
 
     <table class="coupon-table">
@@ -33,18 +33,18 @@
       </tbody>
     </table>
 
-    <div id="popup" class="popup">
-      <div class="popup-content">
-        <button class="close-btn" onclick="closePopup()">×</button>
-        <img id="popupImage" src="" />
-        <h2 id="popupName"></h2>
-        <p id="popupCondition"></p>
-        
-        <div id="displayArea"></div>
-        
-      </div>
+    <!-- ป็อปอัป -->
+<div id="popup">
+    <div id="popupContent">
+      <h3 id="popupName">ชื่อคูปอง</h3>
+      <img id="popupImage" src="" alt="ภาพคูปอง">
+      <p id="popupCondition">เงื่อนไขการใช้</p>
+      <p id="popupExpiry">วันหมดอายุ</p>
+      <div id="displayArea"></div> <!-- โค้ด QR และ Barcode -->
+      <span id="closePopup" onclick="closePopup()">ปิด</span>
     </div>
   </div>
+  
 
   <script src="script.js"></script>
 </body>
