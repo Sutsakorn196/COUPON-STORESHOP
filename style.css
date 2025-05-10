@@ -118,6 +118,7 @@ table td img {
 }
 
 /* ===== POPUP ===== */
+/* ===== POPUP ===== */
 #popup {
   position: fixed;
   top: 50%;
@@ -131,7 +132,18 @@ table td img {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   display: none;
   z-index: 1000;
+  overflow: hidden; /* ป้องกันไม่ให้ป็อปอัพขยายออกจากกรอบ */
 }
+
+/* สำหรับข้อความเงื่อนไขที่เลื่อนดูได้ */
+#popupCondition {
+  max-height: 100px; /* จำกัดความสูงของข้อความ */
+  overflow-y: auto; /* เพิ่มการเลื่อนแนวตั้ง */
+  padding-right: 12px; /* ให้มีช่องว่างขวา */
+  font-size: 0.95rem;
+  color: #555;
+}
+
 
 #popup img {
   display: block;
