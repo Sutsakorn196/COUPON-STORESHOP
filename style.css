@@ -185,7 +185,7 @@ table td img {
 /* ==== IMAGE SIZING ==== */
 #popupImage {
   width: 100%;
-  max-height: 180px;
+  max-height: 300px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
