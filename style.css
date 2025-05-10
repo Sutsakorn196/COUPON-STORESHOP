@@ -1,4 +1,10 @@
 
+.table-container {
+  max-height: 400px; /* กำหนดความสูงสูงสุดที่ตารางจะสามารถแสดงได้ */
+  overflow-y: auto;  /* เปิดการเลื่อนในแนวตั้ง */
+  border: 1px solid #ddd; /* เพิ่มเส้นขอบรอบๆ ตาราง */
+  border-radius: 8px; /* ทำมุมให้ตารางนุ่ม */
+}
 /* ===== RESET & BASE STYLE ===== */
 * {
   margin: 0;
@@ -92,25 +98,27 @@ button:hover {
   background-color: #0056d2;
 }
 
-/* ===== TABLE ===== */
+/* กำหนดขนาดและรูปแบบการแสดงผลตาราง */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
 }
 
 table th, table td {
   padding: 12px;
   border: 1px solid #ddd;
   text-align: center;
-  font-size: 0.95rem;
 }
 
 table th {
   background-color: #f3f3f3;
+  font-size: 1rem;
 }
 
-/* ===== COUPON IMAGE ===== */
+table td {
+  font-size: 0.95rem;
+}
+
 table td img {
   width: 70px;
   height: auto;
